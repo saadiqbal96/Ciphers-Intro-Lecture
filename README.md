@@ -1,4 +1,4 @@
-# Ciphers-Intro-Lecture # Work in Progress (WIP)
+# Ciphers-Intro-Lecture (Work in Progress...)
 
 Here are the basics of encryption, hashes and digital signatures explained using simple, real-word analogies.
 
