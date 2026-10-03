@@ -38,15 +38,16 @@ Hashing is the process of converting data into a fixed-length value called a has
 A useful way to think of hashing is as a digital fingerprint. If the original data changes, even by a single character, the resulting hash will be completely different.
 
 **Alice and Bob Example**
-1. Alice writes a message: Hello Bob
+1. Alice writes a message: Hello Bob.
 2. Alice generates a hash of the message: A1B2C3D4..
-3. Alice sends both the message and the hash to Bob
+3. Alice sends both the message and the hash to Bob.
 4. When Bob receives the message, he generates a hash of the received message.
 5. If Bob's calculated hash matches Alice's hash, he knows the message has not been altered during transmission.
 
 If the message was changed to: Hello B0b, the hash would be completely different, indicating that the data has been modified. 
 
 **Key Point**
+
 Hashing is used to verify integrity, not confidentiality.
 - Encryption hides data
 - Hashing checks whether data has been changed.
