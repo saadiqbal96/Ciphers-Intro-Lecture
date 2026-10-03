@@ -3,6 +3,7 @@
 **Encryption**
 
 Encryption was introduced in order to communicate safely over the Internet.
+
 *What encryption is*: plaintext (which basically contains the private information that needs to be sent confidentially) is encrypted and then made unreadable (cypher text) turning it into a string of numbers/letters, and can only be read as plaintext data again by those who have the decryption key.
 
 There are two main ways of communicating through encryption:
