@@ -10,7 +10,7 @@ There are two main ways of communicating through encryption:
 - Public (asymmetric): the sender encrypts plaintext using the receiver public key (lock) in this form of communication the receiver who is identified by the public key is the only one who knows the private key (unlock) and can use it to decrypt the data.
 
 **Symmetric Encryption:**
-As said, symmetric encryption uses a single shared key to encrypt and decrypts data. Both Alice and Bob must possess the same secret key before they can communicate securely.
+As said, symmetric encryption uses a single shared key to encrypt and decrypt data. Both Alice and Bob must possess the same secret key before they can communicate securely.
 For example, Alice encrypts a message using a shared key and sends it to Bob. Bob then uses that same key to decrypt and read the message.
 The main advantage of symmetric encryption is that it is fast and efficient, making it suitable for encrypting large amounts of data.
 *Examples:* AES, DES..
@@ -29,3 +29,25 @@ This removes the need to share a secret key beforehand and makes secure communic
 5. Bob decrypts the message using his private key.
 
 *Only Bob can read the message because only Bob possesses the private key.*
+
+**Hashing**
+
+Hashing is the process of converting data into a fixed-length value called a hash. Unlike encryption, hashing is a *one way process*, meaning the original data cannot be recovered from the hash.
+
+A useful way to think of hashing is as a digital fingerprint. If the original data changes, even by a single character, the resulting hash will be completely different.
+
+**Alice and Bob Example**
+1. Alice writes a message: Hello Bob
+2. Alice generates a hash of the message: A1B2C3D4..
+3. Alice sends both the message and the hash to Bob
+4. When Bob receives the message, he generates a hash of the received message.
+5. If Bob's calculated hash matches Alice's hash, he knows the message has not been altered during transmission.
+
+If the message was changed to: Hello B0b, the hash would be completely different, indicating that the data has been modified. 
+
+**Key Point**
+Hashing is used to verify integrity, not confidentiality.
+- Encryption hides data
+- Hashing checks whether data has been changed.
+
+*Examples:* SHA-256, SHA-3..
