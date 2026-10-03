@@ -9,13 +9,13 @@ There are two main ways of communicating through encryption:
 - Private (symmetric): in this communication both the sender and receiver use one shared decryption key.
 - Public (asymmetric): the sender encrypts plaintext using the receiver public key (lock) in this form of communication the receiver who is identified by the public key is the only one who knows the private key (unlock) and can use it to decrypt the data.
 
-**Symmetric Encryption**
+**Symmetric Encryption:**
 As said, symmetric encryption uses a single shared key to encrypt and decrypts data. Both Alice and Bob must possess the same secret key before they can communicate securely.
 For example, Alice encrypts a message using a shared key and sends it to Bob. Bob then uses that same key to decrypt and read the message.
 The main advantage of symmetric encryption is that it is fast and efficient, making it suitable for encrypting large amounts of data.
 *Examples:* AES, DES..
 
-**Asymmetric Encryption**
+**Asymmetric Encryption:**
 Asymmetric encryption uses a pair of keys: a public key and a private key.
 Bob shares his public key with Alice while keeping his private key secret. Alice encrypts a message using Bob's public key, and only Bob can decrypt it using his private key.
 This removes the need to share a secret key beforehand and makes secure communication possible between parties who have never met.
